@@ -5,6 +5,7 @@ class Team:
         self.name = input_team_name
         self.players = input_players
         self.coach = input_coach
+        self.points = 0
 
 
     # Define function to add new player
@@ -19,3 +20,11 @@ class Team:
                 return True
         # if player is not in team
         return False
+    
+
+    # Define function for play game
+    def play_game(self, play):
+        if play == True:
+            self.points += 3
+        else:
+            self.points += 0
