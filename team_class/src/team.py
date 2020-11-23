@@ -1,6 +1,7 @@
 # Create a class called Team
 class Team:
 
+    # Initialise Team
     def __init__(self, input_team_name, input_players, input_coach):
         self.name = input_team_name
         self.players = input_players
@@ -21,10 +22,14 @@ class Team:
         # if player is not in team
         return False
     
+        # return self.players.count(checked_player) > 0
 
     # Define function for play game
     def play_game(self, play):
         if play == True:
             self.points += 3
-        else:
-            self.points += 0
+        # else:
+        #     self.points += 0
+        
+        # if play:
+            # self.points +=
