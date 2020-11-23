@@ -7,4 +7,8 @@ class Team:
         self.players = input_players
         self.coach = input_coach
 
+
+    # Define function to add new player
+    def add_player(self, new_player):
+        self.players.append(new_player)
         
